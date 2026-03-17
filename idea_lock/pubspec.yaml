@@ -1,0 +1,59 @@
+name: idea_lock
+description: "Idea Lock — Turn thinking into doing. Tinder + Reddit + Deep Work Focus Lock."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Backend
+  supabase_flutter: ^2.5.0
+
+  # State Management
+  flutter_riverpod: ^2.5.1
+  riverpod_annotation: ^2.3.5
+  flutter_bloc: ^8.1.5
+  equatable: ^2.0.5
+
+  # Navigation
+  go_router: ^13.2.0
+
+  # UI / Animations
+  flutter_card_swiper: ^7.0.1
+  flutter_animate: ^4.5.0
+  cached_network_image: ^3.3.1
+  shimmer: ^3.0.0
+
+  # Local Storage
+  hive_flutter: ^1.1.0
+
+  # Env
+  flutter_dotenv: ^5.1.0
+
+  # Utilities
+  dio: ^5.4.3
+  image_picker: ^1.1.2
+  timeago: ^3.6.1
+  uuid: ^4.4.0
+  intl: ^0.19.0
+  url_launcher: ^6.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  build_runner: ^2.4.9
+  riverpod_generator: ^2.4.0
+  hive_generator: ^2.0.1
+  mocktail: ^1.0.3
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
